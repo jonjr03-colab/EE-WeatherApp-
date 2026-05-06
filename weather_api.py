@@ -55,14 +55,14 @@ def get_7day_forecast(latitude, longitude):
   # Helper Function Call
   forecast_url=get_localized_forcast_url(latitude, longitude)
 
-  if forcast_url is None: # Fail-fast Check, if the first function failed (i.e., bad coordinates, network error)
+  if forecast_url is None: # Fail-fast Check, if the first function failed (i.e., bad coordinates, network error)
     return None           # Avoids a crash
 
   headers={"User-Agent":"weather-app (drubioci@stevens.edu) (msuh@stevens.edu) (jlayme@stevens.edu)"}
 
   try:
     response=requests.get(forecast_url, headers=headers)
-    reponse.raise_for_status()
+    response.raise_for_status()
     return response.json() 
 
   except requests.exceptions.RequestException as e:
@@ -72,5 +72,5 @@ def get_7day_forecast(latitude, longitude):
 
 # ==Test==
 if __name__=="__main__":
-  data=get_7day_forcast(40.74400786550859, -74.02491546017065) # Coordinates for Stevens Instutute of Technology
+  data=get_7day_forecast(40.74400786550859, -74.02491546017065) # Coordinates for Stevens Instutute of Technology
   print("Data fetched:", data is not None) # Prints a boolean that checks if the code is functioning
