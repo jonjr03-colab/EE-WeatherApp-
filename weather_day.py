@@ -16,7 +16,7 @@ class WeatherDay:
 
     def __init__(self, date, high_temp, low_temp, condition, rain_chance):
         #Assigns values to the instance variables
-        self.date = #date Stores date as a string
+        self.date = date #Stores date as a string
         self.high_temp = high_temp #Stores high temperature
         self.low_temp = low_temp #Stores low temperature
         self.condition = condition #Stores weather condition
