@@ -60,7 +60,7 @@ class WeatherForecast:
         "Date":d.date,
         "High":d.high_temp,
         "Low":d.low_temp,
-        "Avg":d.avg_temp,
+        "Avg":d.average_temp(),
         "Condition":d.condition,
         "Rain %":d.rain_chance
       }
