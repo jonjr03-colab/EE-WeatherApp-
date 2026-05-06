@@ -38,7 +38,7 @@ def get_localized_forcast_url(latitude, longitude):
     print("Error getting forcast URL:", e)
     return None
 
-def get_7day_forcast(latitude, longitude):
+def get_7day_forecast(latitude, longitude):
   """
   Retrieves 7-day forcast data
 
