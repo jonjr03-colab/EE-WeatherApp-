@@ -37,11 +37,11 @@ EE-WeatherApp/
 ```
 4. Run second cell to run the program
 ## Contributions
-###Dan Rubio Ciungan
+### Dan Rubio Ciungan
 - Developed `weather_api.py` and `weather_forecast.py`
-###Jonathan Layme    
+### Jonathan Layme    
 - Developed `weather_day.py` and `weather_utils.py`
 - Contributed to `README.md`
-###Matthew Suh
+### Matthew Suh
 - Developed `weather_test.py` and `main.ipynb`
 - Contributed to `README.md`
