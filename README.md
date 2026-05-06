@@ -33,7 +33,7 @@ EE-WeatherApp/
 
 3. Run first cell to install dependencies
 ```bash
-pip install -r requirements.txt
+!pip install -r requirements.txt
 ```
 4. Run second cell to run the program
 ## Contributions
